@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Indian Railways</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .nav {
+            display: inline-block;
+            
+        }
+
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .hero .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .features .feature {
+            display: flex;
+            align-items: center;
+        }
+
+        .features .feature i {
+            font-size: 24px;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .features .feature span {
+            font-weight: bold;
+        }
+
+        .form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form .field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .field label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .field select,
+        .field input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .field .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .field .btn:hover {
+            background-color: #0062cc;
+        }
+
+        .images {
+            width: 50%; 
+            height: auto;
+            margin-right: 100%; 
+            display: inline-block;
+            vertical-align: middle; 
+        }
+
+        .images img {
+            
+            height: auto;
+            margin-right: 20px; 
+            float: left; 
+        }
+
+        footer {
+            
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images.png" alt="IRCTC Logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Ask Disha</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Agent Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Indian Railways</h1>
+            <p>Safety, Security, Punctuality</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>BOOK Ticket</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>PNR Status</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Charts / Vacancy</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="field">
+                <label for="from">From:</label>
+                <select id="from">
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="to">To:</label>
+                <select id="to">
+                    <option value="Kasaragod">Kasaragod</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="date">Date:</label>
+                <input type="date" id="date" value="2023-08-01">
+            </div>
+            <div class="field">
+                <label for="class">Class:</label>
+                <select id="class">
+                    <option value="3A">3A</option>
+                    <option value="2A">2A</option>
+                    <option value="1A">1A</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="seat-type">Seat Type:</label>
+                <select id="seat-type">
+                    <option value="TATKAL">TATKAL</option>
+                    <option value="GENERAL">GENERAL</option>
+                    <option value="PREMIUM">PREMIUM</option>
+                </select>
+            </div>
+            <div class="field">
+                <button class="btn">Search Train</button>
+            </div>
+        </div>
+
+        <div class="images">
+            <img src="train-image-1.png" alt="Train Image">
+            <img src="train-image-2.png" alt="Waterfall Image">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2024 Indian Railways. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
